@@ -8,7 +8,8 @@ def our_decorator(func):  # our_decorator amends/enriches the behaviour of foo
     return some_inner_func
 
 def foo(x):
-    print("Hi, foo has been called with '%s'" % str(x)) # str serves to convert every data type to string 
+    print("Hi, foo has been called with '%s'" \
+    	% str(x)) # str serves to convert every data type to string 
 
 foo( "call foo directly" )
 foo( 123 )

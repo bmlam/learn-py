@@ -1,0 +1,10 @@
+pathlib has a few more method than os.path. Like glob, with_name, replace, replace_ext?
+
+The following code echos content of all text files provided as cmdln arguments:
+	import fileinput
+	for line in fileinput.input():
+	    print(line)
+
+tempfile.mktemp is depricated!, use tempfile.mkstemp. This also return the opened file handle.
+
+linecache allows us to print the source code of imported modules.
